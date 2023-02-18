@@ -5,7 +5,7 @@ import React from 'react'
 export default function RodaPe() {
   return (
     <footer className={styles.rodape}>
-        <h2>Desenvolvido por Felipe Santa Cruz</h2>
+        <h2>Desenvolvido por Alura</h2>
     </footer>
   )
 }
