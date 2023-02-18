@@ -2,7 +2,7 @@
 
 ## Routes da biblioteca React-router-dom
 
-- Ele avisa que vão existir mas de uma rota dentro dele
+- É o componente que engloba um conjunto de rotas filhas do local atual 
 
 ## BrouserRouter
 
