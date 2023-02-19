@@ -15,21 +15,25 @@ export default function Player() {
 
     console.log(video)
 
-  return (
-    <>
-    <Banner imagen={"player"}/>
-    <Titulo>
-        <h1>Player</h1>
-    </Titulo>
-    <iframe 
-    width="560" 
-    height="315" 
-    src={video.link}
-    title={video.titulo}
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen></iframe>
+    return (
+        <>
+            <Banner imagen={"player"} />
+            <Titulo>
+                <h1>Player</h1>
+            </Titulo>
+            <section className={styles.container}>
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src={video.link}
+                    title={video.titulo}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
 
-    </>
-  )
+                </iframe>
+            </section>
+
+        </>
+    )
 }
