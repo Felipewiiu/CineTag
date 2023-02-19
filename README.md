@@ -35,6 +35,13 @@ O método some() testa se ao menos um dos elementos no array passa no teste impl
 ```
 array.splice(position, number)
 ```
-O argumento position determina a posição do primeiro item a ser excluído e o argumento num determina o número de elementos a serem excluídos.
+O argumento position determina a posição do  item a ser excluído e o argumento number determina o número de elementos a serem excluídos.
+
+## Méto de array findIndex
+
+O ``findIndex()` método retorna o índice do primeiro elemento em uma matriz que satisfaça a função de teste fornecida. Se nenhum elemento satisfizer a função de teste, -1 será retornado.
+
+## useParams
+
 
 

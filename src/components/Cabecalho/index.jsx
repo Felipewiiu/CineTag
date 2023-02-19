@@ -8,14 +8,14 @@ import CabecalhoLink from 'components/cabecalhoLink'
 export default function Cabecalho() {
   return (
     <header className={styles.cabecalho}>
-      <Link to="./">
+      <Link to="/">
         <img src={logo} alt="Logo Cinetag" />
       </Link>
       <nav>
-        <CabecalhoLink url="./">
+        <CabecalhoLink url="/">
           Home
         </CabecalhoLink>
-        <CabecalhoLink url='./Favoritos'>
+        <CabecalhoLink url='/Favoritos'>
           Favoritos
         </CabecalhoLink>
       </nav>
