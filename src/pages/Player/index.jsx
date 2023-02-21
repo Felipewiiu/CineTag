@@ -1,10 +1,10 @@
 import styles from './Player.module.css'
-
 import React from 'react'
 import Banner from 'components/banner'
 import Titulo from 'components/titulo'
 import { useParams } from 'react-router-dom'
 import videos from 'json/db.json'
+import NaoEncontrada from 'pages/NaoEncontrada'
 
 export default function Player() {
 
@@ -13,7 +13,9 @@ export default function Player() {
         return video.id === Number(parametros.id)
     })
 
-    console.log(video)
+    if(!video){
+        return <NaoEncontrada/>
+    }
 
     return (
         <>
