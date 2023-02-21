@@ -43,5 +43,11 @@ O ``findIndex()` método retorna o índice do primeiro elemento em uma matriz qu
 
 ## useParams
 
+## Criando uma api fake
+
+- Basta criar um repositório do Github
+- Acessar o endereço : `https://my-json-server.typicode.com/`
+- Colocar o nome do seu repositório 
+
 
 

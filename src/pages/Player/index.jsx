@@ -1,17 +1,24 @@
 import styles from './Player.module.css'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from 'components/banner'
 import Titulo from 'components/titulo'
 import { useParams } from 'react-router-dom'
-import videos from 'json/db.json'
+
 import NaoEncontrada from 'pages/NaoEncontrada'
 
 export default function Player() {
 
+    const [video, setVideos] = useState([])
     const parametros = useParams();
-    const video = videos.find(video => {
-        return video.id === Number(parametros.id)
-    })
+
+    useEffect(() =>{
+        fetch(`https://my-json-server.typicode.com/Felipewiiu/Json_server_cineTag/videos?id=${parametros.id}`)
+        .then(resposta => resposta.json())
+        .then(dados => {
+            setVideos(...dados)
+        })
+    }, [])
+
 
     if(!video){
         return <NaoEncontrada/>
