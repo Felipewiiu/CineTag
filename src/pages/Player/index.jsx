@@ -10,6 +10,7 @@ export default function Player() {
 
     const [video, setVideos] = useState([])
     const parametros = useParams();
+    console.log(parametros)
 
     useEffect(() =>{
         fetch(`https://my-json-server.typicode.com/Felipewiiu/Json_server_cineTag/videos?id=${parametros.id}`)
@@ -17,7 +18,7 @@ export default function Player() {
         .then(dados => {
             setVideos(...dados)
         })
-    }, [])
+    }, [parametros.id])
 
 
     if(!video){

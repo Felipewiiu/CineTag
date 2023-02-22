@@ -43,6 +43,14 @@ O ``findIndex()` método retorna o índice do primeiro elemento em uma matriz qu
 
 ## useParams
 
+É um hook que retorna uma par de chave e valor dos parâmetros dinâmicos de uma URL que foram correspondidos pelo `<Route path/>`.
+Da mesma maneira que conseguimos enviar parâmetros conseguimos recolhe-los com o `useParams()` como no exemplo:
+
+```
+ <Route path=':id' element={<Player />} />
+```
+
+
 ## Criando uma api fake
 
 - Basta criar um repositório do Github
